@@ -1,23 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    
+    <title>oops</title>    
     <style>
-        *{box-sizing: border-box;}
-        h1.logo{
-            font-size: 50px;
+        @font-face {
+            font-family: Michroma;
+            src: url("fonts/Michroma-Regular.ttf");
         }
+
+       *{
+            box-sizing: border-box;
+            font-family: Michroma;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        h1.logo{
+            font-size: 70px;
+            text-shadow: 5px 5px 3px darkgray;
+        }
+
         section.center{
             text-align: center;
         }
+
+        .low-mirgin{
+            margin-top: -40px;
+        }
     </style>   
 </head>
+
+
 <body>
     <section class="center">
-    <h1 class="logo">404 not Found</h1>
-    </section>
+    <h1 class="logo">404</h1>
+    <h3 class="low-mirgin">
+        <h4> page -  not -  Found</h4>
+        <a href="https://rpkc.github.io/">Home</a>
+    </h3>
+    </section>    
 </body>
 </html>
