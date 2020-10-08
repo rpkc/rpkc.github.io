@@ -1,0 +1,28 @@
+.column-left
+{
+    width: 50%;
+    float: left;
+}
+
+.column-right
+{
+    width: 50%;
+    float: right;
+}
+
+
+@media screen and (max-width: 644px){
+    .row::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .column-left{
+        width: 100%;
+        float: none;
+    }
+    .column-right{
+        width: 100%;
+        float: none;
+    }
+}
