@@ -147,7 +147,7 @@ font-size: 20px;
   }
 
 
-@media screen and (max-width: 264px){
+@media screen and (max-width: 300px){
 .subline{font-size: 0px;}
 }
 
