@@ -146,6 +146,11 @@ font-size: 20px;
     } 
   }
 
+
+@media screen and (max-width: 264px){
+.subline{font-size: 0px;}
+}
+
 @media screen and (max-height: 450px) {
     .navigation a {font-size: 23px}    
   }
