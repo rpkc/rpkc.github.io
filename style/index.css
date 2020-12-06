@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 body{
     height:100%;
