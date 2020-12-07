@@ -160,27 +160,12 @@ div.footer{
   } 
 
 
-@media screen and (max-width: 1080px){
-    div.main-containt{
-
-        width: 70%;
-    }
-}
 @media screen and (max-width: 720px){
-    div.main-containt{
-
-        width: 80%;
-    }
     span.sublogo{
         font-size: 0px;
     }
     input[type=submit]{
       width: 100%;
       letter-spacing: 5px;
-    }
-}
-@media screen and (max-width: 360px){
-    div.main-containt{
-        width: 90%;
     }
 }
