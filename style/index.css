@@ -164,6 +164,9 @@ div.footer{
     span.sublogo{
         font-size: 0px;
     }
+        div.main-containt{
+            margin:30px;
+    }
     input[type=submit]{
       width: 100%;
       letter-spacing: 5px;
