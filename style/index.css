@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+.main-body{
+    /* text-align: center; */
+    font-size: 10vmin;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    font-family: 'Markazi Text', serif;
+}
+span #description{
+height: 100%;
+vertical-align: middle;
+}
