@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="I am Rupak Chowdhury">
+    <meta name="keywords" content="rpkc, github">
+    <meta name="author" content="Rupak Chowdhury">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/index.min.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <script src="javascript/index.min.js"></script>
+</head>
+<body>
+    <div class="main-containt" id="main">
+        <div class="logo">Rupak<span class="sublogo">&nbsp;Chowdhury</span>
+            <button class="openbtn" onclick="menu()" id="menubtn">&#9776;</button>
+        </div>
+            <div id="menupanel" class="sidepanel">
+                <a href="#Home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                <a href="#contact"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</a>
+              </div>
+			  
+            <div class="main-body" id="mainbody">
+                
+                <!-- <div class="heading-body">Contact</div> -->
+                <form  method="post" autocomplete="off" name="contact">
+                    <div class="text">Contact</div>
+                    <div>              
+                        <label for="email">&#xf1fa; Email :</label>
+                        <input type="email" id="email" name="EMAIL" placeholder="Ex: someone@example.com" required maxlength="64">
+                    </div>
+                    <div>
+                        <label for="subject"> &#xf02d; Subject:</label>
+                        <input type="text" id="subject" name="SUBJECT"  placeholder="Reason of your Contact..." required maxlength="128">
+                    </div>
+                    
+                <div>
+                    <label for="message"> &#xf075; Leave a Message</label>
+                    <textarea id="message" name="MESSAGE" placeholder="Write something..." required maxlength="512" ></textarea>
+                </div>
+                    <input type="submit" value="Send &#xf1d8;">
+                  </form>
+            </div>
+              
+			 <div class="footer">
+                <a href="https://twitter.com/RupakOnline" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/rpkc" target="_blank"><i class="fa fa-github" ></i></a>
+             </div>
+              <div class="margin"></div>
+    </div>
+    <div id="overlay" >
+        <div id="text"><i class="fa fa-spinner fa-pulse"></i> Sending...</div>
+      </div>
+      <div id="snackbar"></div>
+    <script src="javascript/contact.js"></script>
+
+   </body>
+</html>
