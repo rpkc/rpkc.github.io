@@ -7,7 +7,7 @@
     scrollbar-color: hsl(214, 89%, 52%) hsl(216, 20%, 95%) !important;
     scrollbar-width: thin !important;
      --shadow-color:rgba(10, 63, 119, 0.349);
-    --mobile-menu-height:5rem;
+    --mobile-menu-height:4rem;
     --mobile-menu-bg-color:white;
     --mobile-menu-open-bg-color:white;
     --mobile-menu-a-bg-color:hsl(214, 89%, 52%);
@@ -36,17 +36,17 @@ h1,h2,h3,h4,h5,h6{
     margin:0;
     padding: 0%;
 }
-body{margin-bottom: 5rem;
+body{margin-bottom: 4rem;
     margin-top: 3rem;}
     
 #page-container {
     position: relative;
-    min-height: calc(100vh - 8rem);
+    min-height: calc(100vh - 7rem);
   }
   
   #content-wrap {
     padding-bottom: var(--footer-height);
-    min-height: calc(100vh - 8rem);
+    min-height: calc(100vh - 7rem);
   }
   #footer {
     position: absolute;
@@ -63,7 +63,6 @@ body{margin-bottom: 5rem;
     
   }
   div.main-body{
-    
     background-color: rgb(240, 242, 245);
     min-height: calc(100vh - 10rem);
     width: 100%;
@@ -124,133 +123,24 @@ body{margin-bottom: 5rem;
     box-shadow: 1px 1px 10px var(--shadow-color);
     /* border-bottom: 3px solid var(--mobile-menu-a-bg-color); */
     }
-
-    .menu-event{
-        display: none;
+    .menu .menu-list{
+        margin:0;
+        padding: 0%;
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
-    
-    
-    .menu-event:checked ~ .menu{
-        height: 100vh;
-        width: 100vw;
-        background-color: var(--mobile-menu-open-bg-color);
-    }
-    .menu-btn {
-        width: calc(var(--mobile-menu-height) - 1rem);
-        height:calc(var(--mobile-menu-height) - 1rem);
-        background-color: var(--menu-button-bg-color);
-        position: absolute;
-        border-radius: 50%;
-        text-align: center;
-        line-height: calc(var(--mobile-menu-height) - 1rem);
-        box-shadow: none;
-        font-size: calc(calc(var(--mobile-menu-height) - 1rem) / 2);
-        z-index:2;
-        cursor: pointer;
-       box-shadow: 3px 3px 0 0 var(--menu-button-shadow-color);
-       color: white;
-      }
-    
-      .menu-btn:hover,.menu-btn:focus,.menu-btn:active{
-          background-color: #66a2f0;
-      }
-    
-    .menu-list{
-        margin: 0;
-        height:var(--mobile-menu-height);
-        width:var(--mobile-menu-height);
-        background-color: transparent;
-        border-radius: 100%;
-        position: relative;
-        transition: var(--transition-timing);
-        transform: rotate(180deg);
-    }
-    
-    .menu-item{
-        height: calc(var(--mobile-menu-height) / 2);
-        width: calc(var(--mobile-menu-height) / 2);
-        list-style: none;
-        line-height: calc(var(--mobile-menu-height) / 2);
-        text-align: center;
-        margin: 0;
-        font-size: 0;
-        position: absolute;
-        background-color: transparent;
-        pointer-events: none;
-        transition:var(--transition-timing);
-    }
-    
-    .menu-list .menu-item a{
-        text-decoration: none;
-        padding: none;
-        border-radius: 50%;
-        transition: var(--transition-timing);
-        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
-       color: var(--mobile-menu-bg-color);
-       background-color: var(--mobile-menu-a-bg-color);
-    }
-
-    .menu-event:checked ~.menu .menu-list .menu-item a{
+    .menu .menu-list .menu-item{
         font-size: 2rem;
-        line-height: 1.5rem;
-        padding: 2rem;
-        /* transition: var(--transition-timing); */
-        pointer-events: all;
     }
-    
-    
-    .menu-event:checked ~.menu .menu-list{
-        height: 20rem;
-        width: 20rem;
-        transform: rotate(0deg);
-        }
-        
-    .menu-event:checked ~ .menu  .menu-list .menu-item{
-        height: 10rem;
-        width:10rem;
-        line-height:10rem;
-        transition: var(--transition-timing);
+    .menu .menu-list .menu-item a{
+        text-decoration: none;
+        color: var(--mobile-menu-a-bg-color);
     }
-    
-    .menu-event:checked ~.menu .menu-btn{
-        background-color: #FF2400;
-    }
-    .menu-event:checked ~.menu .menu-btn i:before{
-        content: "\f00d";
-    }
-    
-    .menu-item:nth-child(1)
-    {
-        top:0;
-        left: 0;
-        border-radius: 10rem 0 0 0;
-        padding: 1rem 0 0 1rem; 
-    }
-    
-    .menu-item:nth-child(2)
-    {
-        right: 0;
-        top: 0;
-        border-radius: 0 10rem 0 0;
-        padding: 1rem 1rem 0 0;
-    }
-    
-    .menu-item:nth-child(3)
-    {
-        bottom:0;
-        right: 0;
-        border-radius: 0 0 10rem 0;
-        padding: 0 1rem 1rem 0;
-    } 
-    
-    .menu-item:nth-child(4)
-    {
-        bottom: 0;
-        left: 0;
-        border-radius: 0 0 0 10rem;
-        padding: 0 0 1rem 1rem;
-    }
-
     .middle{
         display: flex;
         flex-direction: column;
@@ -326,7 +216,7 @@ body{margin-bottom: 5rem;
 .menu-btn{
     display: none;
 }
-.menu-event:checked ~.menu .menu-list,
+
 .menu .menu-list{
     margin: 0;
     padding: 0;
@@ -351,7 +241,6 @@ body{margin-bottom: 5rem;
     z-index: 2;
 }
 
-.menu-event:checked ~ .menu  .menu-list .menu-item,
 .menu  .menu-list .menu-item{
     height: 100%;
     width: 100%;
@@ -364,7 +253,6 @@ body{margin-bottom: 5rem;
     justify-content: center;
 }
 
-.menu-event:checked ~.menu .menu-list .menu-item a,
 .menu .menu-list .menu-item a{
     position: relative;
     text-align: center;
@@ -379,7 +267,6 @@ body{margin-bottom: 5rem;
 }
 
 
-.menu-event:checked ~.menu .menu-list .menu-item a[info]:hover::after,
 .menu .menu-list .menu-item a[info]:hover::after{
     content: attr(info);
     font-size: 1rem;
@@ -398,44 +285,9 @@ body{margin-bottom: 5rem;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-.menu-event:checked ~.menu .menu-list .menu-item a:hover,
 .menu .menu-list .menu-item a:hover{
     background-color: rgba(30, 106, 221, 0.185);
 }
-
-.menu-item:nth-child(1)
-{
-    top:auto;
-    left: auto;
-    border-radius: 0;
-    padding: 0; 
-}
-
-.menu-item:nth-child(2)
-{
-    right: auto;
-    top: auto;
-    border-radius:0;
-    padding:0;
-}
-
-.menu-item:nth-child(3)
-{
-    bottom:auto;
-    right: auto;
-    border-radius: 0;
-    padding: 0;
-} 
-
-.menu-item:nth-child(4)
-{
-    bottom: auto;
-    left: auto;
-    border-radius: 0;
-    padding: 0;
-}
-
-
 
 }
 
